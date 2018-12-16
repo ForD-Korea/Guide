@@ -141,10 +141,10 @@ git bash 실행
 
 4. `git_test -> test` 폴더로 이동. 
 
-   ![이미지](/Users/irene/FORD/images/make.PNG)
+   ![이미지](./images/make.PNG)
 
-5. 텍스트 파일 생성 (test.txt : 테스트를 위한 임시 파일)
-   ![이미지](/Users/irene/FORD/images/make2.PNG)
+5. 텍스트 파일 생성 (test.txt : 테스트를 위한 임시 파일)  
+   ![이미지](./images/make2.PNG)
 
 6. 명령어 입력 
 
@@ -153,7 +153,7 @@ git bash 실행
 
 7. 명령어 입력 (git commit -m "메시지")
 
-   ![이미지](/Users/irene/FORD/images/commit.PNG)
+   ![이미지](./images/commit.PNG)
 
 8. 명령어 입력 git config --global user.name "GitHub 가입할 때 사용한 이름"
 
@@ -161,11 +161,11 @@ git bash 실행
 
 10. 명령어 입력 git push
 
-    ![이미지](/Users/irene/FORD/images/push.PNG)
+    ![이미지](./images/push.PNG)
 
 11. 확인
 
-    ![이미지](/Users/irene/FORD/images/push2.PNG)
+    ![이미지](./images/push2.PNG)
     ​    
 
 ## 소스트리 사용방법
@@ -178,24 +178,24 @@ git bash 실행
 
 2. 소스트리 및 빗버킷 가입 
 
-   ![이미지](/Users/irene/FORD/images/sourcetree.PNG)
+   ![이미지](./images/sourcetree.PNG)
 
    Bitbucket 클라우드 클릭 <br/>
    소스트리 및 빗 버킷 가입하여 진행
 
 3. 인증
 
-   ![이미지](/Users/irene/FORD/images/sourcetree_auth.PNG)
+   ![이미지](./images/sourcetree_auth.PNG)
 
 4. 다음과 같은 화면이 나오면 기본적인 세팅 완료
 
-   ![이미지](/Users/irene/FORD/images/sourcetree_main.PNG)
+   ![이미지](./images/sourcetree_main.PNG)
 
 ### 소스트리 사용하기
 
-1. [깃허브 만들기](#깃허브-계정-만들기) 페이지에서 만들었던 레포지토리 가져오기
+1. [깃허브 만들기](#깃허브-계정-만들기) 페이지에서 만들었던 Repository 가져오기
 	
-	다음 화면에서 새로만들기 - URL복제를 클릭한다. <br/>
+	다음 화면에서 새로만들기 - URL복제를 클릭한다.   
 	클릭 후 앞서 만든 깃허브 레포지토리를 입력한다.
 	
 	![이미지](./images/sourcetree_origin.PNG)
@@ -257,8 +257,8 @@ git bash 실행
 	
 8. 마무리
 
-	클론을 통하여 다른 레포지토리 역시 가져올 수 있다. 깃허브에 공개 된 모든 코드는 오픈소스이며, 라이센스만 잘 명시해 주면 사용하는 데 지장없다.
+	클론을 통하여 다른 Repository 역시 가져올 수 있다. GitHub에 공개 된 모든 코드는 오픈소스이며, 라이센스만 잘 명시해 주면 사용하는 데 지장없다.
 	
-	깃/깃허브 사용방법은 기본적으로 꼭 알아둬야 할 지식이다. 앞으로 자주 사용하게 될 테니 익숙해지고, 일일커밋은 힘들더라도 주기적으로 커밋을 하며 깃허브를 관리하는 좋은 습관을 들이기를 추천한다. 
+`Git / GitHub` 사용방법은 기본적으로 꼭 알아둬야 할 지식이다. 앞으로 자주 사용하게 될 테니 익숙해지고, 주기적으로 커밋을 하며 GitHub를 관리하는 좋은 습관을 들이기를 추천한다. 
 	
-	( 잔디가 심어지는 것을 보면 내심 뿌듯하다 :D )
+> ( 잔디가 심어지는 것을 보면 내심 뿌듯하다 :D )
