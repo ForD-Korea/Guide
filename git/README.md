@@ -1,14 +1,29 @@
-# 깃허브 가이드라인
+# GitHub 가이드라인
 
-## 깃허브 소개
-깃허브(GitHub) : 분산 버전 관리 툴인 깃(Git)을 사용하는 프로젝트를 지원하는 웹 호스팅 서비스 <br/>
-**오픈 소스 코드 저장소**이며 많은 오픈 소스들이 깃허브를 통해 관리되고 있다.
+협업 과정에서 이런 말을 들어본다고 하자. 
 
-## 깃 소개
+> 아, 우선 issue로 달아주시구요, 제 레포에서 fork 떠서 원하는 부분 수정해 주시구요, PR 올려주세요. 
+
+Issue는 무엇이고 레포는 무엇이고.. 그것을 관리하는 GitHub은 무엇일까 ? 
+
+
+
+## GitHub 소개
+
+GitHub(깃허브) : 분산 버전 관리 툴인 깃(Git)을 사용하는 프로젝트를 지원하는 웹 호스팅 서비스 <br/>
+**오픈 소스 코드 저장소**이며 많은 오픈 소스들이 GitHub를 통해 관리되고 있다.
+
+## Git 소개
+
 깃(Git) : 분산 버전 관리 툴. <br/>
-이게 뭐라고 쓸까?
 
-예를 들어 보자..
+많은 팀 단위 개발 협업과정에서 **Git**이 많이 사용되고 있다. 
+
+개발자가 두 명 이상이라면, 소스 코드를 ver0.1, ver0.1.1.. 이렇게 관리하는데에는 분명 한계가 있다. 
+
+
+
+ 
 
 ![이미지](./images/memo1.PNG)
 
@@ -24,136 +39,158 @@
 
 ![이미지](./images/memo7.PNG)
 
-기존 이렇게 관리를 하면서 불편함을 못느꼈다면... 
+> 이 그림의 의도도 좋고 전달하고자 하는 바도 명확해서 좋으나, 그대로 쓰기에는 구어체인 점도 그렇고 다시 만들어야 할 필요가 있습니다. 
 
-### **깃 쓰지 마러.. 인정!**
+만약, 이렇게 소스파일을 관리하며 **모든 개발자가 불편함을 느끼지 않았다면 정말 Git을 사용하지 않아도 괜찮다.** 
 
-## 깃을 쓰게 되면?
+
+
+## Git을 사용하게 된다면? 
 
 ![이미지](./images/state.PNG)
 
-변경 사항에 대해 확인이 가능해진다.
+파일 변경사항에 대해 **history** 를 위와 같이 확인할 수 있다. 
 
-\ㅇ/ : 그렇다면 어떻게 쓸까?
 
-[깃허브 설치](https://git-scm.com/)
 
-자 설치를 시작하자.
+## GitHub 설치
 
-* 윈도우
- 
-    ![이미지](./images/install-window.PNG)
+[설치](https://git-scm.com/downloads)페이지에서 현재 컴퓨터의 운영체제에 맞는 Git을 받으면 된다. 
 
-1. 클릭 <br/>
-2. 아싸리 Next 누르기 <br/>
-3. 설치 완료
-   
-* 맥
+![install](./images/install.png)
 
-1. terminal 실행
-2. git --version 입력
-3. 설치하라는 문구가 나오면 YES
-4. 기다리면 끝
-    
-    
-## 깃 가지고 놀기
+  
+
+## Git 사용해보기
 
 주로 사용하게 될 명령어는 크게 4가지다.
 
 1. git add <br/>
-	: 변경 사항된 사항을 Stage라고 하는 공간에 올린다.
+   : 변경 사항된 사항을 Stage라고 하는 공간에 올린다.
+
+   > Stage : 어떤 파일을 공유할지 선별해서 임시로 올려두는 정류소 같은 곳. 
+
 2. git commit <br/>
    : 코드의 변경 사항을 저장한다.
+
+   > 실제 공유되는 원격 저장소에 저장 되기 전, 내 컴퓨터에서 변경사항을 저장한다.
+
 3. git push <br/>
    : 로컬 저장소에 저장된 변경 내용을 깃허브 혹은 깃 서버로 전송한다.
+
+   > 공유를 위해 원격 저장소로 저장한 내용을 보낸다. 이 작업이 완료되면 해당 파일의 변경사항을 모두와 공유할 수 있다. 
+
 4. git pull <br/>
    : 깃허브 혹은 깃 서버에 있는 내용을 로컬 저장소로 이동한다.
+
+   > 원격 저장소에 있는 파일의 변경사항을 내려 받을 수 있다. 
+
 5. git checkout name <br/>
    : 브랜치를 이동한다.
-    
-글로 적어봣자 들어오지도 않는다.
 
-### 깃허브 계정 만들기
+   > 브랜치에 관한 내용은, [branch란 무엇인가](https://git-scm.com/book/ko/v2/Git-%EB%B8%8C%EB%9E%9C%EC%B9%98-%EB%B8%8C%EB%9E%9C%EC%B9%98%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80) 를 읽어보고 학습하는 것을 권장한다. 
 
-우선 깃허브 게정부터 만들자.
 
-[깃허브](https://github.com) 이 링크로 들어가서 가입
 
-깃허브 게정을 만들었으면, 저장소를 만든다.
+### GitHub 계정 만들기
+
+우선 GitHub 게정부터 만들자.
+
+[GitHub](https://github.com)  링크로 들어가서 가입할 수 있다. 
+
+GitHub 계정을 만들었으면, 저장소(Repository, 줄여서 Repo)를 만든다.
 
 1. 이런 창이나
 
 ![이미지](./images/repo1.PNG)
 
-2. 이런 창이 보이면 NEW 클릭
+1. 이런 창이 보이면 `NEW` 클릭
 
 ![이미지](./images/repo2.PNG)
 
-3. 이름을 입력하고 생성
+1. Repository 이름을 입력하고  `Create repository` 버튼클릭 
 
 ![이미지](./images/repo3.PNG)
-    
-4. 이런 창이 나오고, 보이는 경로 복사
+​    
+
+1. 주소창 오른쪽의 `복사` 아이콘 클릭 
+
+   > 이 작업이 끝나면, 내가 생성한 원격 저장소의 주소를 복사하는 작업이 완료된 것이다. 
 
 ![이미지](./images/repo4.PNG)
 
-### 깃허브 사용 해보기 (bash)
+### GitHub 사용 해보기 (bash)
 
 git bash 실행
-    > window 유저라면 git bash 실행 <br/>
-    맥 유저라면 terminal 실행
-    
-1. 폴더 생성 (바탕화면에 만들었다.)
+
+> **window** 유저라면 git bash 실행   
+> **Mac** 유저라면 terminal 실행
+
+1. 폴더 생성 (Comment : 여기서 git_test 빈 폴더로 되어있는 사진 하나 더 필요할듯 합니다. )
+
+   > 예시 Repo는 바탕화면에 생성하였으며, 원하는 곳에 생성할 수 있다.
+   > 단, **빈 폴더** 여야 한다. 
+
 2. 폴더로 이동
+
 3. 명령어 입력 (git clone "복사한 URL")
 
-    ![이미지](./images/clone.PNG)
-        
-4. 폴더 이동 (폴더가 하나 생겼을 거다.)
+   ```
+   $ git clone https://github.com/KimHunJin/test.git
+   ```
 
-    ![이미지](./images/make.PNG)
+4. `git_test -> test` 폴더로 이동. 
 
-5. 텍스트 파일 생성
-    ![이미지](./images/make2.PNG)
+   ![이미지](/Users/irene/FORD/images/make.PNG)
 
-6. 명령어 입력 (git add *)
+5. 텍스트 파일 생성 (test.txt : 테스트를 위한 임시 파일)
+   ![이미지](/Users/irene/FORD/images/make2.PNG)
+
+6. 명령어 입력 
+
+   > 1. git add <파일 이름> : <파일 이름> 에 해당하는 파일을 Stage에 올린다는 뜻.
+   > 2. git add * : 변경사항이 있는(혹은 처음 생성한) 모든 파일을 Stage에 올린다는 뜻. 
+
 7. 명령어 입력 (git commit -m "메시지")
 
-    ![이미지](./images/commit.PNG)
+   ![이미지](/Users/irene/FORD/images/commit.PNG)
 
-8. 명령어 입력 git config --global user.name "깃허브 가입할 때 사용한 이름"
-9. 명령어 입력 git config --global user.email "깃허브 가입할 때 사용한 이메일"
+8. 명령어 입력 git config --global user.name "GitHub 가입할 때 사용한 이름"
+
+9. 명령어 입력 git config --global user.email "GitHub 가입할 때 사용한 이메일"
+
 10. 명령어 입력 git push
 
-    ![이미지](./images/push.PNG)
+    ![이미지](/Users/irene/FORD/images/push.PNG)
 
 11. 확인
 
-    ![이미지](./images/push2.PNG)
-        
+    ![이미지](/Users/irene/FORD/images/push2.PNG)
+    ​    
 
 ## 소스트리 사용방법
-소트트리는 깃 명령어 (pull, commit 등)을 잘 모르더라도 GUI	로 쉽게 깃을 사용할 수 있게 도와주는 IDE이다.
+
+소트트리는 Git 명령어 (pull, commit 등)을 잘 모르더라도 GUI	로 쉽게 깃을 사용할 수 있게 도와주는 IDE이다.
 
 ### 소스트리 설치하기 (맥, 윈도우 동일)
 
-1. 소스트리 설치 ; [링크](https://www.sourcetreeapp.com/)
+1. 소스트리 설치 : [링크](https://www.sourcetreeapp.com/)
 
 2. 소스트리 및 빗버킷 가입 
 
-	![이미지](./images/sourcetree.PNG)
-	
-	Bitbucket 클라우드 클릭 <br/>
-	소스트리 및 빗 버킷 가입하여 진행
+   ![이미지](/Users/irene/FORD/images/sourcetree.PNG)
+
+   Bitbucket 클라우드 클릭 <br/>
+   소스트리 및 빗 버킷 가입하여 진행
 
 3. 인증
 
-	![이미지](./images/sourcetree_auth.PNG)
-	
+   ![이미지](/Users/irene/FORD/images/sourcetree_auth.PNG)
+
 4. 다음과 같은 화면이 나오면 기본적인 세팅 완료
 
-	![이미지](./images/sourcetree_main.PNG)
-	
+   ![이미지](/Users/irene/FORD/images/sourcetree_main.PNG)
+
 ### 소스트리 사용하기
 
 1. [깃허브 만들기](#깃허브-계정-만들기) 페이지에서 만들었던 레포지토리 가져오기
